@@ -1,0 +1,10 @@
+<h3>Object List</h3>
+
+{% if objects %}
+    <ul style="list-style-type: none;">
+        {% for object in objects %}
+            <li>{{ object }}</li>
+            <li style="margin-left: 20px; margin-bottom: 10px;">&gt; {{ object.description }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
