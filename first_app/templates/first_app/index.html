@@ -1,5 +1,7 @@
 <h3>Object List</h3>
 
+<a href="{% url 'create-view' %}">Add Object</a>
+
 {% if objects %}
     <ul style="list-style-type: none;">
         {% for object in objects %}
